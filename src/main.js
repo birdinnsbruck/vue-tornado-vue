@@ -14,8 +14,7 @@ new Vue({
   template: '<App/>'
 })
 // 打开页面，连接服务器
-var socket = new WebSocket('ws://192.168.122.128:8080')
+var socket = new WebSocket('ws://127.0.0.1:8090')
 socket.onmessage = function (evt) {
   var user = evt.data
-  console.log(user)
 }
